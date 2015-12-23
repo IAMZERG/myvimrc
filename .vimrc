@@ -24,3 +24,21 @@ filetype on
 filetype indent on
 
 set t_RV=
+
+let mapleader=" " "setting the <leader> character
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""  Custom Mappings """""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+nnoremap <leader>sv :source $MYVIMRC<cr>
+nnoremap <leader>ev :vs $MYVIMRC<cr>
+onoremap <leader>i( :<c-u>normal! f(vi)<cr>
+onoremap <leader>i) :<c-u>normal! F)vi(<cr>
+
+abiabla dkkdkd()
+
+
