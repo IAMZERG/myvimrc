@@ -21,6 +21,7 @@ set backspace=indent,eol,start  " make that backspace key work the way it should
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
+set expandtab
 
 
 syntax on
