@@ -7,7 +7,7 @@ set wildmenu  "autocomplete menus
 
 set wildmode=list:longest "make wildmode behave like BASH completion
 
-set autoindent  "get rid of the crud when opening vim
+set autoindent
 
 set shortmess=a
 
@@ -18,10 +18,16 @@ set showmatch           " jump to matches when entering regexp
 set ignorecase          " ignore case when searching
 set smartcase           " no ignorecase if Uppercase char present
 set backspace=indent,eol,start  " make that backspace key work the way it should
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+
 
 syntax on
 filetype on
 filetype indent on
+
+au BufRead, BufNewFile *.hbs set syntax=html
 
 set t_RV=
 
@@ -34,11 +40,21 @@ let mapleader=" " "setting the <leader> character
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 
-nnoremap <leader>sv :source $MYVIMRC<cr>
-nnoremap <leader>ev :vs $MYVIMRC<cr>
-onoremap <leader>i( :<c-u>normal! f(vi)<cr>
-onoremap <leader>i) :<c-u>normal! F)vi(<cr>
+"sourcing the vimrc
+nnoremap <leader>sv :source $MYVIMRC<cr> 
+" editing the vimrc
+nnoremap <leader>ev :vs $MYVIMRC<cr>  
+" operator pending mapping for parenthesis
+onoremap <leader>i( :<c-u>normal! f(vi)<cr> 
+" operator pending mapping for the same
+onoremap <leader>i) :<c-u>normal! F)vi(<cr> 
+onoremap <leader>i( :<c-u>normal! f(vi)<cr> 
+" operator pending mapping for the same
+onoremap <leader>i) :<c-u>normal! F)vi(<cr> 
 
-abiabla dkkdkd()
+nnoremap <leader>ms :mksession<cr>
 
+augroup onend
+	au VimLeave * mks! ~/.vim/lastopen.vim
+augroup END
 
