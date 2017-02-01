@@ -1,3 +1,9 @@
+
+""""""""""""""""""""""
+" Initialize Pathogen"
+""""""""""""""""""""""
+execute pathogen#infect()
+
 set nocompatible  "No need for vi compatibility
 set nu  "syntax highlighting on
 
@@ -8,6 +14,7 @@ set wildmenu  "autocomplete menus
 set wildmode=list:longest "make wildmode behave like BASH completion
 
 set autoindent
+set smartindent
 
 set shortmess=a
 
