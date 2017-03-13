@@ -15,4 +15,12 @@ ln -s ~/.vim/vimrc ~/.vimrc
 cd ~/.vim
 git submodule init
 git submodule update
+
 ```
+
+### Reconstituting Omnisharp-vim
+```
+cd ~/.vim/bundle/omnisharp-vim/
+
+```
+
