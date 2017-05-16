@@ -1,3 +1,9 @@
+
+""""""""""""""""""""""
+" Initialize Pathogen"
+""""""""""""""""""""""
+execute pathogen#infect()
+
 set nocompatible  "No need for vi compatibility
 set nu  "syntax highlighting on
 
@@ -8,6 +14,7 @@ set wildmenu  "autocomplete menus
 set wildmode=list:longest "make wildmode behave like BASH completion
 
 set autoindent
+set smartindent
 
 set shortmess=a
 
@@ -21,6 +28,7 @@ set backspace=indent,eol,start  " make that backspace key work the way it should
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
+set expandtab
 
 
 syntax on
