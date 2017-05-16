@@ -61,8 +61,9 @@ onoremap <leader>i( :<c-u>normal! f(vi)<cr>
 onoremap <leader>i) :<c-u>normal! F)vi(<cr> 
 
 " open vim using "vim" and then use "<leader>lo" to go directly to my last open session
-nnoremap <leader>ms :mksession<cr>
+nnoremap <leader>ms :mksession!<cr>
 nnoremap <leader>lo :call LastOpen()<cr>
+nnoremap <leader>po :call ProjectOpen()<cr>
 
 augroup onend
 	au VimLeave * mks! ~/.vim/lastopen.vim
@@ -70,4 +71,8 @@ augroup END
 
 function LastOpen()
 	source ~/.vim/lastopen.vim
+endfunction
+
+function ProjectOpen()
+  source ./Session.vim
 endfunction
