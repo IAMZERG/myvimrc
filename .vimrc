@@ -9,9 +9,10 @@ set nu  "syntax highlighting on
 
 set cursorline "line for cursor
 
-set wildmenu  "autocomplete menus
+"set wildmenu  "autocomplete menus  commented out for testing
 
 set wildmode=list:longest "make wildmode behave like BASH completion
+"set path+=** "allow deep searching for find command
 
 set autoindent
 set smartindent
@@ -30,16 +31,17 @@ set softtabstop=2
 set shiftwidth=2
 set expandtab
 
+set cinoptions+=J1      " fix indentation for JSON and Javascript
+
 
 syntax on
 filetype on
 filetype indent on
 
-au BufRead, BufNewFile *.hbs set syntax=html
 
 set t_RV=
 
-let mapleader=" " "setting the <leader> character
+let mapleader=" " "setting the <leader> character to space
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -47,6 +49,10 @@ let mapleader=" " "setting the <leader> character
 """"""""""""""""  Custom Mappings """""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"syntax highlighting for *.hbs (Ember)
+au BufRead *.hbs set syntax=html
+au BufNewFile *.hbs set syntax=html
 
 "sourcing the vimrc
 nnoremap <leader>sv :source $MYVIMRC<cr> 
