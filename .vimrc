@@ -53,6 +53,8 @@ let mapleader=" " "setting the <leader> character to space
 "syntax highlighting for *.hbs (Ember)
 au BufRead *.hbs set syntax=html
 au BufNewFile *.hbs set syntax=html
+au BufRead *.jsx set syntax=javascript
+au BufNewFile *.jsx set syntax=javascript
 
 "sourcing the vimrc
 nnoremap <leader>sv :source $MYVIMRC<cr> 
