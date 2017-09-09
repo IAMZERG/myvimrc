@@ -74,13 +74,15 @@ nnoremap <leader>lo :call LastOpen()<cr>
 nnoremap <leader>po :call ProjectOpen()<cr>
 
 augroup onend
-	au VimLeave * mks! ~/.vim/lastopen.vim
+  au VimLeave * mks! ~/.vim/lastopen.vim
 augroup END
 
 function LastOpen()
-	source ~/.vim/lastopen.vim
+  source ~/.vim/lastopen.vim
 endfunction
 
 function ProjectOpen()
   source ./Session.vim
 endfunction
+
+
