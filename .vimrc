@@ -86,3 +86,5 @@ function ProjectOpen()
 endfunction
 
 
+let &t_SI = "\e6 q"
+let &t_SI = "\e5 q"
