@@ -88,3 +88,7 @@ endfunction
 
 let &t_SI = "\e6 q"
 let &t_SI = "\e5 q"
+
+
+" remap tab to control-N in insert mode
+inoremap <Tab> <C-N>
