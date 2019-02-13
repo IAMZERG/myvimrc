@@ -50,6 +50,9 @@ let mapleader=" " "setting the <leader> character to space
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 
+"syntax highlighting for *.py
+au BufRead *.py :call PythonConfig()
+au BufNewFile *.py :call PythonConfig()
 "syntax highlighting for *.hbs (Ember)
 au BufRead *.hbs set syntax=html
 au BufNewFile *.hbs set syntax=html
@@ -85,6 +88,13 @@ function ProjectOpen()
   source ./Session.vim
 endfunction
 
+function PythonConfig()
+  set expandtab
+  set tabstop=4
+  set shiftwidth=4
+  set softtabstop=4
+endfunction
+
 
 let &t_SI = "\e6 q"
 let &t_SI = "\e5 q"
@@ -92,3 +102,6 @@ let &t_SI = "\e5 q"
 
 " remap tab to control-N in insert mode
 inoremap <Tab> <C-N>
+
+" easily navigate buffers
+nnoremap <F5> :buffers<CR>:buffer<Space>
