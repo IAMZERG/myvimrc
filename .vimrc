@@ -9,6 +9,10 @@ set rtp+=~/.fzf
 set nocompatible  "No need for vi compatibility
 set nu  "syntax highlighting on
 
+"enable omnicomplete
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
+
 set cursorline "line for cursor
 
 "set wildmenu  "autocomplete menus  commented out for testing
@@ -103,7 +107,7 @@ let &t_SI = "\e5 q"
 
 
 " remap tab to control-N in insert mode
-inoremap <Tab> <C-N>
+inoremap <Tab> <C-X><C-O>
 
-" easily navigate buffers
+" easily navigate buffers?  Maybe?
 nnoremap <F5> :buffers<CR>:buffer<Space>
