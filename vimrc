@@ -1,0 +1,1 @@
+/home/iamzerg/.vim/vimrc
