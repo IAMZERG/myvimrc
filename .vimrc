@@ -4,6 +4,8 @@
 """"""""""""""""""""""
 execute pathogen#infect()
 
+set rtp+=~/.fzf
+
 set nocompatible  "No need for vi compatibility
 set nu  "syntax highlighting on
 
