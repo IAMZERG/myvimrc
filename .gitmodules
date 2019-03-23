@@ -1,9 +1,6 @@
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
 	url = https://github.com/ctrlpvim/ctrlp.vim
-[submodule "bundle/omnisharp-vim"]
-	path = bundle/omnisharp-vim
-	url = https://github.com/OmniSharp/omnisharp-vim
 [submodule "bundle/vim-dispatch"]
 	path = bundle/vim-dispatch
 	url = git://github.com/tpope/vim-dispatch.git
