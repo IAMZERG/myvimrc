@@ -111,3 +111,7 @@ inoremap <Tab> <C-X><C-O>
 
 " easily navigate buffers?  Maybe?
 nnoremap <F5> :buffers<CR>:buffer<Space>
+
+" patch modeline vulnerability
+set nomodeline
+set modeline=0
