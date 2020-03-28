@@ -114,4 +114,4 @@ nnoremap <F5> :buffers<CR>:buffer<Space>
 
 " patch modeline vulnerability
 set nomodeline
-set modeline=0
+set modelines=0
