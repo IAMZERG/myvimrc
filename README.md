@@ -11,7 +11,7 @@ Below is the 'just add water' version.
 ```
 cd ~
 git clone http://github.com/IAMZERG/myvimrc.git ~/.vim
-ln -s ~/.vim/vimrc ~/.vimrc
+ln -s ~/.vim/.vimrc ~/.vimrc
 cd ~/.vim
 git submodule init
 git submodule update --recursive
